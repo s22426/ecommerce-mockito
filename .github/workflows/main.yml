@@ -19,9 +19,7 @@ jobs:
         java-version: '22'
 
     - name: Run main class (dry run)
-      working-directory: ./ecommerce-mockito
       run: mvn exec:java
 
     - name: Run tests
-      working-directory: ./ecommerce-mockito
       run: mvn test
